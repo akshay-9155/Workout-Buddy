@@ -11,6 +11,7 @@ const app = express()
 
 // Enable CORS
 app.use(cors({
+  // origin: 'http://localhost:3000', // Adjust based on your frontend's domain in development/production
   origin: 'http://localhost:3000', // Adjust based on your frontend's domain in development/production
   methods: ['GET', 'POST', 'PATCH', 'DELETE'], // Add allowed HTTP methods
   credentials: true // If you need to send cookies or authorization headers
